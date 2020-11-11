@@ -1,0 +1,102 @@
+body{
+  background-color: #F3F3F4;
+  font-family: "Helvetica";
+  color: #676A6C;
+  font-size: 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  place-items: center;
+  grid-row-gap: 10px;
+}
+
+.card{
+  display: flex;
+  width: 95%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #E7EAEC;
+}
+
+form{
+  text-align: left;
+  align-self: center;
+}
+
+.image img{
+  border-radius: 50%;
+  width: 70%;
+}
+
+.image{
+  align-self: center;
+}
+
+.content{
+  text-align: left;
+}
+
+button{
+  border: none;
+  background: none;
+}
+
+input{
+  background: none;
+  border: none;
+  font-family: "Helvetica";
+  color: #676A6C;
+  font-size: 10px;
+}
+
+textarea{
+  background: none;
+  border: none;
+  font-family: "Helvetica";
+  color: #676A6C;
+  font-size: 10px;
+  resize: none;
+}
+
+.edit{
+  place-self: flex-end;
+  flex: auto;
+  text-align: right;
+}
+
+.h1{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.h2{
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.delete{
+  place-self: flex-end;
+}
+
+.add{
+  border: 1px solid green;
+  border-radius: 50%;
+  color: green;
+}
+
+.geoloc{
+  background-color: #5B95F4;
+  border-radius: 25px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

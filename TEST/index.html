@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="card">
+        <div class="image">
+          <img src="images/john-smith.jpg" alt="john">
+          <p><b>Graphics designer</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress"  placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card" >
+        <div class="image">
+          <img src="images/alex jonathan.jpg" alt="alex">
+          <p><b>CEO</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="images/monica smith.jpg" alt="monica">
+          <p><b>Marketing manager</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="images/michael zimber.jpg" alt="michael">
+          <p><b>Sales Manager</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="images/sandra smith.jpg" alt="sandra">
+          <p><b>Graphics designer</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="images/janeth carton.jpg" alt="janeth">
+          <p><b>Graphics designer</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="images/alex jonathan.jpg" alt="alex">
+          <p><b>CEO</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea type="textarea" class="adress" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <div class="card exemple" >
+        <div class="image">
+          <img src="images/john-smith.jpg" alt="john">
+          <p><b>Graphics designer</b></p>
+        </div>
+        <form class="is-readonly">
+          <div>
+            <input class="h1" type="text" placeholder="Name" value="John Smith" disabled>
+          </div>
+          <br>
+          <div>
+            <label><img src="images/location.png" style="height:10px;"</label>
+            <input type="adress" placeholder="Adress" value="Riviera State 32/106" disabled>
+          </div>
+          <br>
+          <div>
+            <input class="h2" type="text" placeholder="Company" value="Twitter, Inc." disabled>
+          </div>
+          <br>
+          <div>
+            <textarea class="adress" type="textarea" placeholder="Adress" disabled>795 Folsom Ave, Suite 600 San Francisco, CA 94107</textarea>
+            <button class="geoloc">Coordinate</button>
+          </div>
+          <div>
+            <label>P:</label>
+            <input type="tel" placeholder="Phone" value="(123)456-7890" oninput="this.value = this.value.replace(/[^0-9.(\)\-+]/g, '')" disabled>
+          </div>
+        </form>
+        <div class="edit">
+          <button><img src="images/edit.png" alt="edit"></button>
+        </div>
+        <div class="delete">
+          <button><img src="images/delete.png" alt="delete"></button>
+        </div>
+      </div>
+      <button class="add">+</button>
+    </div>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
